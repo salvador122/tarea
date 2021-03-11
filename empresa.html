@@ -1,0 +1,128 @@
+
+<head>
+  <style type="text/css">
+@import url("https://fonts.googleapis.com/css?family=Oswald:500");
+.back {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://pp.userapi.com/c841122/v841122831/327e/nHt-92F6yc4.jpg)
+    no-repeat top center #efeff1;
+  background-size: cover;
+}
+.thx {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px;
+}
+nav {
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  text-align: center;
+}
+nav a {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #16151b;
+  margin: 0 15px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #16151b;
+  top: 47%;
+  animation: out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+nav a:hover:before {
+  animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+@keyframes in {
+  0% {
+    width: 0;
+    left: 0;
+    right: auto;
+  }
+  100% {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+@keyframes out {
+  0% {
+    width: 100%;
+    left: auto;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@for $i from 1 through 5 {
+  nav a:nth-child(#{$i}) {
+    animation: show 0.2s #{$i * 0.1+1}s ease 1 both;
+  }
+}
+<!--
+.Estilo7 {
+  font-size: 20pt;
+  font-family: "Courier New", Courier, monospace;
+}
+.Estilo8 {font-size: 16px}
+-->
+  </style>
+<div class="back"></div>
+<nav>
+  <a href="#">About</a>
+  <a href="#">Works</a>
+  <a href="#">Partners</a>
+  <a href="#">Price</a>
+  <a href="#">Contacts</a>
+</nav>
+
+<!-- Unsplash copyright -->
+<a class="thx" style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="http://unsplash.com/@oldskool2016?utm_campaign=photographer-credit" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from paul morris"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32">
+     
+
+<div align="center" class="Estilo7">
+  <p class="Estilo8">mision</p>
+  <p class="Estilo8">la mision de esta pagina es proporcionar informacion sobre los viajes y ah si que tengan descuentos en viajes muy exclusivos y de esta manera promover ele turismo</p>
+  <p class="Estilo8">vision</p>
+  <p class="Estilo8">es llegar a ser la mejor agencia de viajes del pais ya despues se vendran cosas mas grandes como el continente o el mundo pero ese objetivo se busca.</p>
+  <p class="Estilo8">valores.</p>
+  <p class="Estilo8">tenemos confianza para que se haga efectiva la garantia del viaje y se llege al destino </p>
+  <p class="Estilo8">tenemos responsabilidad de que se protaje en todo momento su dinero y su figura como persona </p>
+</div>
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7389.4930550904965!2d-100.96402800109311!3d22.173718539293098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa1e97ef490b5%3A0x15b830dfba5b39ba!2sLas%20Acacias%20157%2C%20Los%20Fresnos%2C%2078433%20Soledad%20de%20Graciano%20S%C3%A1nchez%2C%20S.L.P.!5e0!3m2!1ses!2smx!4v1615417178162!5m2!1ses!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</body>
+</html>>
