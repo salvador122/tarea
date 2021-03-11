@@ -1,0 +1,175 @@
+<head>
+<style type="text/css">
+	<style type="text/css">
+@import url("https://fonts.googleapis.com/css?family=Oswald:500");
+.back {
+  position: left;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://pp.userapi.com/c841122/v841122831/327e/nHt-92F6yc4.jpg)
+    no-repeat top center #efeff1;
+  background-size: cover;
+}
+.thx {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px;
+}
+nav {
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  text-align: center;
+}
+nav a {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #16151b;
+  margin: 0 15px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #16151b;
+  top: 47%;
+  animation: out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+nav a:hover:before {
+  animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+@keyframes in {
+  0% {
+    width: 0;
+    left: 0;
+    right: auto;
+  }
+  100% {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+@keyframes out {
+  0% {
+    width: 100%;
+    left: auto;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form#pago {
+margin:auto;
+background: black;
+color: white;
+font-size: 12px;
+padding: 30px;
+width: 350px;
+border:solid 10px LightSteelBlue;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+}
+
+form#pago fieldset {
+border: none;
+}
+
+form#pago input{
+font-size:12px;
+background: yellow;
+border:solid 1px Green;
+border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+float: right;
+margin-right: 15px;
+width: 200px;
+}
+
+form#pago ol li {
+line-height: 25px;
+list-style: none;
+}
+
+form#pago [required]{
+border:solid 1px red;
+}
+
+input:required {
+outline: 1px solid red;
+}
+</style>
+</head>
+
+<body>
+<nav>
+<a href="index.html">principal</a>
+  <a href="empresa.html">empresa</a>
+  <a href="servicios.html">servicios</a>
+  <a href="contactos.html">Contacts</a></nav>
+<form id="pago">
+<fieldset>
+<legend>Datos del comprador</legend>
+<ol>
+<li>
+<label for="nombre">Nombre</label>
+<input id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre completo" required autofocus>
+</li>
+<li>
+<label for="email">Email</label>
+<input id="email" name="email" type="email" placeholder="ejemplo@um.es" required>
+</li>
+<li>
+<label for="telefono">Teléfono</label>
+<input id="telefono" name="telefono" type="tel" placeholder="Ej. +34668899999" required>
+</li>
+<li>
+<label for="pais">País</label>
+<input id="pais" name="pais" type="text" required>
+</li>
+</ol>
+</fieldset>
+<fieldset>
+<legend>Datos de tarjeta de crédito o débito</legend>
+<ol>
+<li>
+<label for="numtarjeta">Número</label>
+<input id="numtarjeta" name="numtarjeta" type="number" placeholder="Ej. 5555-4444-3333-2222" required>
+</li>
+<li>
+<label for="nomtarjeta">Nombre</label>
+<input id="nomtarjeta" name="nomtarjeta" type="text" placeholder="Nombre que figura en la tarjeta" required>
+</li>
+</ol>
+</fieldset>
+-------------------------------------------------
+<fieldset>
+<button type="submit">Confirmar pedido</button>
+</fieldset>
+</form>

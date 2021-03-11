@@ -1,0 +1,268 @@
+<head>
+  <style type="text/css">
+    {background-color:#FFB6C1;
+    }
+.back {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.thx {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px;
+}
+nav {
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  text-align: center;
+}
+nav a {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #16151b;
+  margin: 0 15px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #16151b;
+  top: 47%;
+  animation: out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+nav a:hover:before {
+  animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+@keyframes in {
+  0% {
+    width: 0;
+    left: 0;
+    right: auto;
+  }
+  100% {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+@keyframes out {
+  0% {
+    width: 100%;
+    left: auto;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@for $i from 1 through 5 {
+  nav a:nth-child(#{$i}) {
+    animation: show 0.2s #{$i * 0.1+1}s ease 1 both;
+  }
+}
+
+
+/*cajas */
+       .con{
+        width: 150%;
+        max-width: 1200px;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        cursor: pointer;
+
+       }
+       .con .caf{
+        width: 300px;
+        height: 500px;
+        border-radius: 4px;
+        box-shadow:0 10px  10px  rgba(0,0,0,0.2);
+        overflow: hidden;
+        margin: 20px;
+        text-align: center;
+        transition: all 0.50s;
+
+       }
+       .con .caf:hover{
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(251, 218, 244,0.1);
+       }
+       .con .caf img{
+        width: 250px;
+        height: 250px;
+
+       }
+       .con .caf h4{
+        font-weight: 600;
+        color: #000000;
+        font-family: serif;
+        font-size: 25px;
+
+
+       }
+       .con .caf p{
+        padding: 0 1rem;
+        font-size: 20px;
+        font-family: sans-serif;
+        font-weight: 300;
+
+
+       }
+      
+
+    
+
+     .con h1{
+        font-weight: 600;
+        color: #0000;
+        font-family: monospace;
+        font-size: 25px;
+
+
+     }
+</style>
+<div class="back"></div>
+<nav>
+ <a href="index.html">principal</a>
+  <a href="empresa.html">empresa</a>
+  <a href="servicios.html">servicios</a>
+  <a href="contactos.html">Contacts</a></nav>
+</nav>
+
+         <div class="con">
+              
+                
+                <div class="caf">
+                  <img src="cancun.jpg">
+                  <h4>viaje a cancun</h4> <br>
+                  <p> sin duda la mejor opcion viaje de 4 dias todo pagado con hotel de 5 stars y ah un super precio</p>
+
+                </div>
+
+                <div class="caf">
+                  <img src="california.jpg">
+                   <h4>viaje a california</h4><br>
+                  <p>super promocion a ir a sentir el sol a una de la playa de california con el hotel todo pagado y tambien el pisto.</p>
+
+
+
+                  
+                </div>
+
+                 <div class="caf">
+                  <img src="amsterdam.jpg">
+                  <h4>viaje a amsterdam</h4> <br>
+                  <p>ven y conoce esta bonita ciudad y prueba la deliciosa marihuana de este lugar con hotel y tour por la ciudad super buena</p>
+
+
+
+                  
+                </div>
+
+                 <div class="caf">
+                  <img src="luna.jpg">
+                  <h4>viaje a la luna</h4> <br>
+                  <p>es un viaje romantica a francia para parejas incluye todo pagado el hotel tiene todas las comodidades</p>  
+                </div>
+
+                 <div class="caf">
+                  <img src="acapulco">
+                  <h4>viaje a acapulco</h4> <br>
+                  <p>ven y disfruta un buen hotel y de la mejor playa del mundo dandote un roll por la ciudad </p>  
+                </div>
+
+
+                 <div class="caf">
+                  <img src="canada.jpg">
+                  <h4>viaje a canada</h4> <br>
+                  <p>ven y conoce nuestras espectaculares montañas y descubre lo maravillosas que son con vista alos alpes suisos</p>  
+                </div>
+
+                 <div class="caf">
+                  <img src="angeles.jpg">
+                  <h4>viaje a los angeles</h4> <br>
+                  <p> ven y conoce las grandes letras de los angeles y visita nuestra cuidad prueba nuestra ultura culinaria</p>  
+                </div>
+
+
+
+                 <div class="caf">
+                  <img src="real.jpg">
+                  <h4>viaje a real de catorce</h4> <br>
+                  <p>ven y conoce nuestro gran tunel y comete un peyote en nuestro maravilloso hotel</p>  
+                </div>
+
+
+                  <div class="caf">
+                  <img src="lagos.jpg">
+                  <h4>viaje a san juan a patin</h4> <br>
+                  <p>Instrumento musical de percusión consistente en una caja de forma cilíndrica, hueca, cubierta en sus dos bases con membranas de piel estirada, que se toca con dos palillos: ¡mira que regalarle un tambor a un niño! Persona que toca el tambor. Nombre que se da a algunos objetos o piezas de forma cilíndrica.</p>  
+                </div>
+
+
+                 <div class="caf">
+                  <img src="veracruz.jpg">
+                  <h4>viaje a veracruz</h4> <br>
+                  <p>ve a veracruz y conoce sus exelentes playas y de esta un hotel glamuroso y de manera impresionante un tiburo</p>  
+                </div>
+
+
+                <div class="caf">
+                  <img src="mazatlan.jpg">
+                  <h4>viaje a mazatlan</h4> <br>
+                  <p>ve y conoce su impresionante malecon y date un sabor de playa muy chido todo pagado hasta el pisto</p>  
+                </div>
+
+                <div class="caf">
+                  <img src="alaska.jpg">
+                  <h4>viaje a alaska</h4> <br>
+                  <p>ven y enfriate un poco a alaska en un maravillosa cabaña y despues skiaras en la nieve aprovecha la promocion </p>  
+                </div>
+
+                <div class="caf">
+                  <img src="cabo.jpg">
+                  <h4>viaje a cabo san lucas </h4> <br>
+                  <p>ven y conoce a aleman date un roll por este hermoso paraiso y sorfea y subete a un yate de 25 millones</p>  
+                </div>
+
+                <div class="caf">
+                  <img src="tulum.jpg">
+                  <h4>viaje a tulum</h4> <br>
+                  <p>ven ala playa con un super precio que te puedes quedar una semana y en pareja es mas barato</p>  
+                </div>
+
+
+
+
+                
+
+</div></div>
+</html>
